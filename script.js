@@ -10,11 +10,10 @@ const person = {
 const team = players;
 
 // Create a shallow copy of the 'players' array
-const team1 = players.slice();
+const team1 = [...players];
 
 // Create a shallow copy of the 'person' object
-const cap1 = Object.assign({}, person);
-
+const cap1 = [...person];
 
 window.players = players;
 window.person = person;
